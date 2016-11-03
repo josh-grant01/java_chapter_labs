@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name - 
 //Date -
 //Class -
@@ -7,14 +7,24 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class Discount
+public class DiscountRunner
 {
-	//instance variables and constructors could be used, but are not really needed
-	
-	//getDiscountedBill() will return final amount of the bill
-	//			if the bill is >2000, the bill receives a 15% discount
-	public static double getDiscountedBill(double bill)
+	public static void main( String args[] )
 	{
-		return 0;
+		Scanner keyboard = new Scanner(System.in);
+		
+		out.print("Enter the original bill amount :: ");
+		double amt = keyboard.nextDouble();
+		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
+		
+		out.print("Enter the original bill amount :: ");
+		amt = keyboard.nextDouble();
+		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
+		
+		out.print("Enter the original bill amount :: ");
+		amt = keyboard.nextDouble();
+		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
+		
+
 	}
 }
