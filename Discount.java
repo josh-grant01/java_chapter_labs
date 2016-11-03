@@ -7,24 +7,17 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class DiscountRunner
+public class Discount
 {
-	public static void main( String args[] )
+	private static double bill;
+	
+	public static double getDiscountedBill(double amt)
 	{
-		Scanner keyboard = new Scanner(System.in);
-		
-		out.print("Enter the original bill amount :: ");
-		double amt = keyboard.nextDouble();
-		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
-		
-		out.print("Enter the original bill amount :: ");
-		amt = keyboard.nextDouble();
-		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
-		
-		out.print("Enter the original bill amount :: ");
-		amt = keyboard.nextDouble();
-		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
-		
-
+		if(amt > 2000)
+			bill = amt;
+		else
+			bill = amt * .85;
+		return bill;	
+			 
 	}
 }
