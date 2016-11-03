@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name - 
 //Date -
 //Class -
@@ -15,6 +15,15 @@ public class DiscountRunner
 		
 		out.print("Enter the original bill amount :: ");
 		double amt = keyboard.nextDouble();
+		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
+		
+		out.print("Enter the original bill amount :: ");
+		amt = keyboard.nextDouble();
+		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
+		
+		out.print("Enter the original bill amount :: ");
+		amt = keyboard.nextDouble();
+		System.out.printf("Bill after discount :: " + "%.2f\n\n",Discount.getDiscountedBill(amt));
 		
 
 	}
