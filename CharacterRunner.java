@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date - 
 //Class -
@@ -14,19 +14,19 @@ public class CharacterRunner
 		Scanner keyboard = new Scanner(System.in);
 		
 		out.print("Enter a letter :: ");
-		char letter = keyboard.next().charAt(0);
-		CharacterAnalyzer test = new CharacterAnalyzer(letter);
-		out.println(test);   //A
-
-		//add more test cases
+		char c = keyboard.next().charAt(0);
+		CharacterAnalyzer test = new CharacterAnalyzer(c);
+		test.setChar(c);
+		out.println(test); 
+			
+		out.print("Enter a letter :: ");
+		c = keyboard.next().charAt(0);
+		test.setChar(c);
+		out.println(test);
 		
-		
-		
-		
-		
-		
-		
-		
-
+		out.print("Enter a letter :: ");
+		c = keyboard.next().charAt(0);
+		test.setChar(c);
+		out.println(test); 
 	}
 }
