@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name - 
 //Date -
 //Class -
@@ -21,35 +21,53 @@ public class CharacterAnalyzer
 
 	public void setChar(char c)
 	{
+		theChar = c;
 	}
 
 	public char getChar()
 	{
-		return '-';
+		return theChar;
 	}
 
 	public boolean isUpper( )
 	{
+		if((int)theChar >= 65)
+			if((int)theChar <= 90)
+			return true;
 		return false;
 	}
 
 	public boolean isLower( )
 	{
+		if((int)theChar >= 97)
+			if((int)theChar <= 122)
+				return true;
+	
 		return false;
 	}
 	
 	public boolean isNumber( )
 	{
+		if((int)theChar >= 48)
+			if((int)theChar <= 57)
+				return true;
+	
 		return false;
 	}	
 
 	public int getASCII( )
 	{
-		return 0;
+		return (int)theChar;
 	}
 
 	public String toString()
 	{
-		return ""+getChar() + " is a lowercase character. ASCII == " + getASCII() + "\n";	  
+		if (isLower() == true)
+			return "" + getChar() + " is a lowercase character. ASCII == " + getASCII() + "\n";	  
+		else if (isUpper() == true)
+			return "" + getChar() + " is a uppercase character. ASCII == " + getASCII() + "\n";
+		else 
+			return "" + getChar() + " is a number. ASCII == " + getASCII() + "\n";
+	
 	}
 }
