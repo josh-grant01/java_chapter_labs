@@ -1,6 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
-//Date - 
+//Date -
 //Class -
 //Lab  -
 
@@ -11,5 +11,17 @@ public class StringRunner
 {
 	public static void main ( String[] args )
 	{
+		StringOddOrEven test = new StringOddOrEven();
+		Scanner keyboard = new Scanner(System.in);
+
+		System.out.println(" Enter a word.");
+		String s = keyboard.nextLine();
+		test.setString(s);
+		test.toString();
+		
+
+
+
+
 	}
 }
