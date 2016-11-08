@@ -1,4 +1,4 @@
-//� A+ Computer Science  -  www.apluscompsci.com
+//? A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -14,14 +14,9 @@ public class StringRunner
 		StringOddOrEven test = new StringOddOrEven();
 		Scanner keyboard = new Scanner(System.in);
 
-		System.out.println(" Enter a word.");
+		System.out.println("Enter a word.");
 		String s = keyboard.nextLine();
+		System.out.println(test);
 		test.setString(s);
-		test.toString();
-		
-
-
-
-
 	}
 }
