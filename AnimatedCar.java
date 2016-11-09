@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name - 
 //Date -
 //Class -
@@ -51,22 +51,21 @@ class AnimatedCar extends Canvas
 		window.setColor(Color.WHITE);
 		window.drawString("Animation Lab - Lab05c", 25, 50 );
 
+
 		window.setColor(Color.GREEN);
-		window.fillRect(x,y+20,80,40);
-
+		window.fillRect(x + 20,360,150,80);
 		
-		//draw a wheel
+		window.setColor(Color.BLUE);
+		window.fillOval(x,400,80,80);
 		
+		window.setColor(Color.BLUE);
+		window.fillOval(x + 120,400,80,80);
 		
-		//draw another wheel
+		x = x + 50;
 		
-		
-		//increment x by 50
-
-		
-		//if x has reached the far right side of the screen
-		//set it back to zero
-		
-		
+		if( x >= 700)
+		{
+			x = 0;
+		}	
 	}	
 }
