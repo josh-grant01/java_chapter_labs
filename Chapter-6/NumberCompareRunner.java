@@ -1,14 +1,10 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
 //Lab  - 
 
 import static java.lang.System.*;
-
-// Lab Chapter 6 - #1  NumberCompare    2015
-
-// Uses files NumberCompareRunner.java and NumberCompare.java
 
 public class NumberCompareRunner
 {
@@ -18,24 +14,39 @@ public class NumberCompareRunner
 		out.println();
 		out.println();
 		
-		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		
+		out.println("My name is Sam Hollenbeck");
 		out.println();		
 		out.println();		
-		
-		
-		// this creates a new NumberCompare object and sends
-		// the values 5 and 6 to the constructor 
+
 	    NumberCompare test = new NumberCompare(5,6);
 	   
-	    out.println(test);  // this calls the toString() method
+	    out.println(test);  
 	    out.println("largest == "+test.getLargest());
 	    out.println("smallest == "+test.getSmallest()+"\n\n");
-
-	    // add more test cases (see the docs for your input values)
-		
-		
-
-
+	    
+	    test.setNums(45,66);
+	   
+	    out.println(test);  
+	    out.println("largest == "+test.getLargest());
+	    out.println("smallest == "+test.getSmallest()+"\n\n");
+	    
+	    test.setNums(-25,10324);
+	   
+	    out.println(test);  
+	    out.println("largest == "+test.getLargest());
+	    out.println("smallest == "+test.getSmallest()+"\n\n");
+	    
+	    test.setNums(-324,12312);
+	   
+	    out.println(test);  
+	    out.println("largest == "+test.getLargest());
+	    out.println("smallest == "+test.getSmallest()+"\n\n");
+	    
+	    test.setNums(34,22);
+	   
+	    out.println(test);  
+	    out.println("largest == "+test.getLargest());
+	    out.println("smallest == "+test.getSmallest()+"\n\n");
 	}
 }
