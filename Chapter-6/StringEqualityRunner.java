@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+=//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -20,22 +20,42 @@ public class StringEqualityRunner
 		out.println();
 		out.println();
 		
-		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Sam Hollenbeck");
 		out.println();		
 		out.println();		
 		
-		
-		// create a new StringEquality object and send
-		// to the constructor the values  "hello" and  "goodbye" 
-	    StringEquality test = ???  ??????(?????, ???????);
+	    StringEquality test = new StringEquality("hello","goodbye");
 	   
-	    out.println(test);  // this calls the toString() method
-		out.println();	// skips a line	
+	    out.println(test);  
+		out.println();
 		
+		test.setWords("one","two");
+		out.println(test);  
+		out.println();
 		
-		// add more test cases (see the docs for the data values)
+		test.setWords("three","four");
+		out.println(test);  
+		out.println();
 		
+		test.setWords("TCEA","UIL");
+		out.println(test);  
+		out.println();
+		
+		test.setWords("State","Champions");
+		out.println(test);  
+		out.println();
+		
+		test.setWords("ABC","ABC");
+		out.println(test);  
+		out.println();
+		
+		test.setWords("ABC","CBA");
+		out.println(test);  
+		out.println();
+		
+		test.setWords("Same","Same");
+		out.println(test);  
+		out.println();
 		
 		
 	}
