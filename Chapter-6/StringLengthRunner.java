@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -20,23 +20,16 @@ public class StringLengthRunner
 		out.println();
 		out.println();
 		
-		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Sam Hollenbeck");
 		out.println();		
 		out.println();		
 		
-		// this should create a new StringLengthCheck object and sends
-		// the values "hello" and "goodbye" to the constructor
-		// these values will be stored inside the object  
-	    StringLengthCheck test = ???  ?????????("hello", "goodbye");
+	    StringLengthCheck test = new StringLengthCheck("hello", "goodbye");
 	   
-	    out.println(test);  // this calls the toString() method
+	    out.println(test);  
 	    out.println();
-
-
-		// add more test cases (see the doc file)
-		
-		
-				
+	    
+	    out.println(test);  
+	    out.println();			
 	}
 }
