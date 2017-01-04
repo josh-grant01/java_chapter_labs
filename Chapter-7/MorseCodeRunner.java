@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -24,43 +24,40 @@ public class MorseCodeRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Sam Hollenbeck");
 		out.println();		
 		out.println();		
 		
-		
-		// Step 1:
-		// create a new MorseCode object and send
-		// the value of 'A' to the constructor
-		//    make sure that your reference variable
-		//    refers to a MorseCode object 
-	    ???? obj = ??? ??????(?????);
-		
-		
-		// Step 2:
-		// use out.println(...) to print out the morse code
-		//    you will need to call your MorseCode object's 
-		//    getMorseCode() method
-		// look at your doc file to see the correct output
-		out.?????????(obj.get?????);
-		
-		
-		// Step 3:
-		// use out.println(...) to print out the morse code message
-		//    you will need to call your MorseCode object's 
-		//    toString() method
-		// look at your doc file to see the correct output
-		out.?????????(obj.to???);		
 
+	    MorseCode obj = new MorseCode('A');
 
-		// Step 4: print a blank line
-		// out.?????????
-		out.??????
+		out.println(obj.getMorseCode());
 		
-
-
-
-		// add more test cases	
+		out.println(obj);		
+		out.println();
+	
+		obj.setChar('B');
+		out.println(obj.getMorseCode() + "\n" + obj + "\n");
+		
+		obj.setChar('3');
+		out.println(obj.getMorseCode() + "\n" + obj + "\n");
+		
+		
+		obj.setChar('Z');
+		out.println(obj.getMorseCode() + "\n" + obj + "\n");
+		
+		
+		obj.setChar('8');
+		out.println(obj.getMorseCode() + "\n" + obj + "\n");
+		
+		
+		obj.setChar('F');
+		out.println(obj.getMorseCode() + "\n" + obj + "\n");
+		
+		
+		obj.setChar('0');
+		out.println(obj.getMorseCode() + "\n" + obj + "\n");
+		
 		
 	}
 }
