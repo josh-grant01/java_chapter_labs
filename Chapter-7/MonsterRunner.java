@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -25,7 +25,7 @@ public class MonsterRunner
 		out.println();
 		
 		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		out.println("My name is Sam Hollenbeck");
 		out.println();		
 		out.println();		
 				
@@ -34,28 +34,28 @@ public class MonsterRunner
 		
 		// ******* monster 1***********************************		
 		// ask for the name and size
-		// System.out.print("Enter the name of monster 1 ");		
-		// String name = keyboard.???
+		System.out.print("Enter the name of monster 1 :: ");		
+		String n = keyboard.nextLine();
 		
-		// System.out.print("Enter the size of monster 1 ");
-		// int size = keyboard.???
-		// keyboard.nextLine();  needed to flush the input buffer
+		System.out.print("Enter the size of monster 1 :: ");
+		int size = keyboard.nextInt();
+		keyboard.nextLine();
 		
 		// instantiate monster1 (new Monster ???)
-		// Monster monster1 = ???
+		Monster monster1 = new Monster(n,size);
 		
 		
 		// ******* monster 2***********************************		
 		// ask for the name and size of monster 2
-		// System.out.print("Enter the name of monster 2 ");		
-		// String name = keyboard.???
+		System.out.print("Enter the name of monster 2 :: ");		
+		n = keyboard.nextLine();
 		
-		// System.out.print("Enter the size of monster 2 ");
-		// int size = keyboard.???
-		// keyboard.nextLine();  needed to flush the input buffer
+		System.out.print("Enter the size of monster 2 :: ");
+		size = keyboard.nextInt();
+		keyboard.nextLine();
 		
 		// instantiate monster2 (new Monster ???)
-		// Monster monster2 = ???
+		Monster monster2 = new Monster(n,size);
 
 
 		System.out.println();
@@ -66,27 +66,63 @@ public class MonsterRunner
 		
 		// print out Monster 2 - name and size
 		// call the monster 2'S toString() method
-		// System.out.... 
+		System.out.println("Monster 2 - " + monster2.toString()); 
 		System.out.println(); // prints a blank line
 		
 		
-		// compare the two monster's sizes
-		// if (monster1.isSmaller(????))
-		// 	  System.out.println("Monster 1 is SMALLER ...");
-		// else
-		//    System.out.println(...
 		
-		// compare the two monster's names
-		// if (monster1.namesTheSame(?????))
-		//    System.out.println(...
-		// else
-		//    System.out.println(
+		if (monster1.isSmaller(monster2))
+		  	  System.out.println("Monster 1 is SMALLER than Monster 2.");
+			else
+		    System.out.println("Monster 1 is BIGGER than Monster 2.");
 		
+	
+		if (monster1.namesTheSame(monster2))
+		    System.out.println("Monster 1 does have the SAME NAME as Monster 2.");
+		else
+		    System.out.println("Monster 1 does NOT HAVE THE SAME NAME as Monster 2.");
 		
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		//***************************************
 		
-		// add more test cases
+		System.out.print("Enter the name of monster 3 :: ");		
+		n = keyboard.nextLine();
+		
+		System.out.print("Enter the size of monster 3 :: ");
+		size = keyboard.nextInt();
+		keyboard.nextLine();
+		
+		Monster monster3 = new Monster(n,size);
+		
+		System.out.print("Enter the name of monster 4 :: ");		
+		n = keyboard.nextLine();
+		
+		System.out.print("Enter the size of monster 4 :: ");
+		size = keyboard.nextInt();
+		keyboard.nextLine();
+		
+		Monster monster4 = new Monster(n,size);
 
-
-
+		System.out.println("Monster 3 - " + monster3.toString());
+		
+		// print out Monster 2 - name and size
+		// call the monster 2'S toString() method
+		System.out.println("Monster 4 - " + monster4.toString()); 
+		System.out.println(); // prints a blank line
+		
+		
+		
+		
+		if (monster3.isSmaller(monster4))
+		  	  System.out.println("Monster 3 is SMALLER than Monster 4.");
+			else
+		    System.out.println("Monster 3 is BIGGER than Monster 4.");
+		    
+		    if (monster3.namesTheSame(monster4))
+		    System.out.println("Monster 3 does have the SAME NAME as Monster 4.");
+		else
+		    System.out.println("Monster 3 does NOT HAVE THE SAME NAME as Monster 4.");
 	}
 }
