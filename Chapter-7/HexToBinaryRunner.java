@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -25,48 +25,45 @@ public class HexToBinaryRunner
 		out.println();
 		out.println();
 		
-		// ***** fill in your name
-		out.println("My name is ????????  ????????????????");
+		
+		out.println("My name is Sam Hollenbeck");
 		out.println();		
 		out.println();		
 		
 		
-		// Step 1:
-		// Create a Scanner object to read in the hex character
-		// make sure that variable keyboard refers to a Scanner object
-		???? keyboard = ?????;
 		
-		
-		// Step 2:
-		// prompt the user to enter a hex character
-		// look at the doc file for an example
-		out.??????(" ......");
-		
-		
-		// Step 3:
-		// read in the hex character that the user enters and store it
-		??? hexChar = keyboard.????????().charAt(0);
+		Scanner keyboard = new Scanner(System.in);
 		
 		
 		
-		// Step 4:
-		// create a new HexToBinary object and send
-		// the value of hexChar to the constructor
-		//    make sure that your reference variable
-		//    refers to a HexToBinary object 
-	    ???? obj = ??? ??????(?????);
+		out.println("Enter a letter :: ");
+		char hexChar = keyboard.next().charAt(0);
 		
+	    HexToBinary test = new HexToBinary(hexChar);
 		
-		// Step 5:
-		// use out.println(...) to print out the results
-		//    you will need to call your HexToBinary object's toString() method
-		// look at your doc file to see the correct output
-		out.?????????(obj.to???);
+		out.println(test);
+		out.println();
 		
+		out.println("Enter a letter :: ");
+		hexChar = keyboard.next().charAt(0);
 		
-		// Step 6: print a blank line
-		// out.?????????
-		out.??????
+		test.setHex(hexChar);
+		out.println(test);
+		
+		out.println("Enter a letter :: ");
+		hexChar = keyboard.next().charAt(0);
+		
+		test.setHex(hexChar);
+		out.println(test);
+		
+		out.println("Enter a letter :: ");
+		hexChar = keyboard.next().charAt(0);
+		
+		test.setHex(hexChar);
+		out.println(test);
+		
+	
+		
 		
 
 		
